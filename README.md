@@ -1,5 +1,5 @@
 # Backend_Developer_Challenge
-Este projeto foi desenvolvido com intuito avaliativo para a candidatura da vaga Backend egeneer
+Este projeto foi desenvolvido com intuito Educativo, para os que deseja aprender mais sobre spring boot
 
 =>Denselvimento de uma API Restfull com Sprig boot<=
 
