@@ -91,7 +91,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<configuration>
+							<mainClass>com.baeldung.webjar.WebjarsdemoApplication</mainClass>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
+
 		</plugins>
 	</build>
 	<repositories>
@@ -130,5 +138,5 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 </project>
