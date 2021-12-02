@@ -2,13 +2,14 @@
 Este projeto foi desenvolvido com intuito avaliativo para a candidatura da vaga Backend egeneer
 
 =>Denselvimento de uma API Restfull com Sprig boot<=
-================COMO INSTALAR=====================
+
+#================COMO INSTALAR=====================
 #Requisitos
 Antes de rodar este projecto deve instalar a versao 8 ou acima de 8 de java# e o apache maaven https://maven.apache.org/download.cgi na sua maquina
 #End-points de teste da aplicacao
 
 #Listagem de paises sem nenhuma ordem (GET)
-# GET base_url/api/v1/paises/listarpaises
+Exemplo:  GET base_url/api/v1/paises/listarpaises
 
 #=>>Listagem de de paises por ordem alfabetica (GET)<<=
 
