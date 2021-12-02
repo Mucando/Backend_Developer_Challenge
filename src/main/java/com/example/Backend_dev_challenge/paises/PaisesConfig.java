@@ -1,3 +1,5 @@
+package com.example.Backend_dev_challenge.paises;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,12 +17,12 @@ public class PaisesConfig {
             }else {
 
             }*/
-            com.example.demo_spring.paises.Paises moz=new com.example.demo_spring.paises.Paises( "Mozambique", "Maputo","África Austral","","801 590 km²");
-            com.example.demo_spring.paises.Paises south_africa=new com.example.demo_spring.paises.Paises( "África do Sul", "Pretória","África Austral","","1 221 037 km²");
-            com.example.demo_spring.paises.Paises angola=new com.example.demo_spring.paises.Paises( "Angola", "Luanda","África Austral","","1 246 700 km² ");
-            com.example.demo_spring.paises.Paises argelia=new com.example.demo_spring.paises.Paises( "Argélia", "Argel","África do Norte","","2 381 741 km²");
-            com.example.demo_spring.paises.Paises benim=new com.example.demo_spring.paises.Paises( "Benim", "Porto Novo","África Ocidental","","112 622 km² ");
-            com.example.demo_spring.paises.Paises botsuana=new com.example.demo_spring.paises.Paises( "Botsuana", "Gaborone","África Austral","","581 730 km² ");
+            Paises moz=new Paises( "Mozambique", "Maputo","África Austral","","801 590 km²");
+            Paises south_africa=new Paises( "África do Sul", "Pretória","África Austral","","1 221 037 km²");
+            Paises angola=new Paises( "Angola", "Luanda","África Austral","","1 246 700 km² ");
+            Paises argelia=new Paises( "Argélia", "Argel","África do Norte","","2 381 741 km²");
+            Paises benim=new Paises( "Benim", "Porto Novo","África Ocidental","","112 622 km² ");
+            Paises botsuana=new Paises( "Botsuana", "Gaborone","África Austral","","581 730 km² ");
 
             repository.saveAll(
                     List.of(

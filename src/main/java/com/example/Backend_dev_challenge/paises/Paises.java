@@ -1,3 +1,5 @@
+package com.example.Backend_dev_challenge.paises;
+
 import javax.persistence.*;
 
 @Entity

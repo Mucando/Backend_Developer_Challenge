@@ -1,3 +1,5 @@
+package com.example.Backend_dev_challenge.paises;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,14 +18,14 @@ public class PaisesServices {
         this.repository = repository;
     }
 
-    public List<com.example.demo_spring.paises.Paises> listar() {
+    public List<Paises> listar() {
         return repository.findAll();
     }
-public List<com.example.demo_spring.paises.Paises> list_ordenada_paises(){
+    public List<Paises> list_ordenada_paises(){
         return repository.findTop10ByOrderByLevelDesc();
-}
-    public void addNewPais(com.example.demo_spring.paises.Paises pais) {
-        Optional<com.example.demo_spring.paises.Paises> optionalPaises = repository.findPaisesByNome_pais(pais.getNome_pais());
+    }
+    public void addNewPais(Paises pais) {
+        Optional<Paises> optionalPaises = repository.findPaisesByNome_pais(pais.getNome_pais());
         if (optionalPaises.isPresent()) {
             throw new IllegalStateException("Este pais ja foi registado");
         } else {
@@ -45,9 +47,9 @@ public List<com.example.demo_spring.paises.Paises> list_ordenada_paises(){
     public void atualizar_dados_pais(Long paisId, String nome_pais,String capital,
                                      String regiao, String area, String sub_regiao) {
 
-        com.example.demo_spring.paises.Paises paises = repository.findById(Math.toIntExact(paisId)).orElseThrow(() -> new IllegalStateException("Este Id->(" + paisId + ") nao existe"));
+        Paises paises = repository.findById(Math.toIntExact(paisId)).orElseThrow(() -> new IllegalStateException("Este Id->(" + paisId + ") nao existe"));
         if (nome_pais != null && nome_pais.length() > 0 && !Objects.equals(paises.getNome_pais(), nome_pais)) {
-            Optional<com.example.demo_spring.paises.Paises> optionalPaises=repository.findPaisesByNome_pais(nome_pais);
+            Optional<Paises> optionalPaises=repository.findPaisesByNome_pais(nome_pais);
             if (optionalPaises.isPresent()){
                 throw new IllegalStateException("Este Nome=>("+nome_pais+") ja existe");
             }else paises.setNome_pais(nome_pais);

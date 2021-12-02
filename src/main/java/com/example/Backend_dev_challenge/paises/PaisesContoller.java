@@ -1,3 +1,6 @@
+package com.example.Backend_dev_challenge.paises;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -6,25 +9,25 @@ import java.util.List;
 @RestController
 @RequestMapping(path = "api/v1/paises")
 public class PaisesContoller {
-    private final com.example.demo_spring.paises.PaisesServices paisesServices;
+    private final PaisesServices paisesServices;
 //    private PaisesServices paiseservices;
 
     @Autowired //ajuda a injectar a variavel paises visto que esta a vir de PaisesService
-    public PaisesContoller(com.example.demo_spring.paises.PaisesServices paisesServices) {
+    public PaisesContoller(PaisesServices paisesServices) {
         this.paisesServices = paisesServices;
     }
 
     @GetMapping("/listagem_em_ordem") //rota
-    public List<com.example.demo_spring.paises.Paises> getpaises_home() {
+    public List<Paises> getpaises_home() {
         return paisesServices.list_ordenada_paises();
     }
     @GetMapping("/listarpaises") //rota
-    public List<com.example.demo_spring.paises.Paises> getpaises() {
+    public List<Paises> getpaises() {
         return paisesServices.listar();
     }
 
     @PostMapping("/postpaises")
-    public void registarNovoPais(@RequestBody com.example.demo_spring.paises.Paises pais) {
+    public void registarNovoPais(@RequestBody Paises pais) {
         paisesServices.addNewPais(pais);
     }
 
@@ -43,3 +46,4 @@ public class PaisesContoller {
         paisesServices.atualizar_dados_pais(paisId, nome_pais, capital,regiao, area, sub_regiao);
     }
 }
+
