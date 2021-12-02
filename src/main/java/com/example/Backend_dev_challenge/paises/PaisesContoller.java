@@ -21,6 +21,7 @@ public class PaisesContoller {
     public List<Paises> getpaises_home() {
         return paisesServices.list_ordenada_paises();
     }
+
     @GetMapping("/listarpaises") //rota
     public List<Paises> getpaises() {
         return paisesServices.listar();
