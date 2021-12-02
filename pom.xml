@@ -70,11 +70,15 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!--<dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <scope>runtime</scope>
-        </dependency>-->
+		<dependency>
+			<groupId>
+				org.springframework.boot
+			</groupId>
+			<artifactId>
+				spring-boot-starter-tomcat
+			</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-relational</artifactId>
@@ -126,5 +130,5 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
-
+	<packaging>war</packaging>
 </project>
