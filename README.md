@@ -54,7 +54,7 @@ Content-Type: application/json
 #}
 
 #Notas
-Estes testes podera realizar no postman e se nao tiver este, baixe neste link(https://www.postman.com/downloads/) ou no Insomnia e se nao tiver este, baixe neste link(https://insomnia.rest/download)
+Estes testes podem ser realizados no navegador ou no postman e se nao tiver este, baixe neste link(https://www.postman.com/downloads/) ou no Insomnia e se nao tiver este, baixe neste link(https://insomnia.rest/download)
 #Estrutura do Projecto
 O projeto implementa uma arquitetura MVC e esta orientado a Objectos.
 
