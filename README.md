@@ -7,6 +7,7 @@ Este projeto foi desenvolvido com intuito Educativo, para os que deseja aprender
 
 #Requisitos
 Antes de rodar este projecto deve instalar a versao 8 ou acima de 8 de java e o apache maaven https://maven.apache.org/download.cgi na sua maquina
+
 #End-points de teste da aplicacao
 
 #Listagem de paises sem nenhuma ordem (GET)
@@ -31,6 +32,7 @@ Exemplo: PUT base_url/api/v1/paises/atualizar_pais/1103?nome_pais=KY&capital=xyz
 
 Se pretender atualizar apenas um e unico registo deve fornecer o atributo no qual deseja atualizar
 PUT base_url/api/v1/paises/atualizar_pais/1103?nome_pais=KY
+
 #Cadastrar um novo registo
 Para o cadastro de um novo registo devera antes conhecer a estrutura de um json
 #
@@ -68,5 +70,7 @@ O subpackege paises do package Backend_dev_challenge encontram-se la todas as cl
 4. PaisesRepository-> Eh uma interface da aplicacao
 5. PaisesServices-> Esta classe define a regra de negocio de como os dados devem ser acessados ao serem requisitados e de como estes devem ser mostrados. resumindo eh o MODELO
 
+#Ficheiro de configuracao para conexao com banco de dados
 
+Abra o diretorio basepath>src>main>resources>application.propaties
 
