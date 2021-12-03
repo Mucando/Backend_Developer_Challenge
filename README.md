@@ -6,7 +6,7 @@ Este projeto foi desenvolvido com intuito Educativo, para os que deseja aprender
 #================COMO INSTALAR=====================
 
 #Requisitos
-Antes de rodar este projecto deve instalar a versao 8 ou acima de 8 de java e o apache maaven https://maven.apache.org/download.cgi na sua maquina
+Antes de rodar este projecto deve instalar a versao 8 ou acima de 8 de java e o apache maven https://maven.apache.org/download.cgi na sua maquina
 
 #End-points de teste da aplicacao
 
@@ -37,25 +37,25 @@ PUT base_url/api/v1/paises/atualizar_pais/1103?nome_pais=KY
 Para o cadastro de um novo registo devera antes conhecer a estrutura de um json
 #
 A Estrutura do Json no qual devera fornecer a url de cadastro deve estar da seguinte maneira:
-#{
+{
     "area": "32548 km2",
     "capital": "Y",
     "nome_pais": "X",
     "regiao": "WF",
     "sub_region": "XXY"
-#}
+}
 Tendo esta estrutura agora podes fazer o seu cadastro com a seguinte url(POST):
 
 Exemplo: POST base_url/api/v1/paises/postpaises
 
 Content-Type: application/json
-#{
+{
     "area": "32548 km2",
     "capital": "Y",
     "nome_pais": "X",
     "regiao": "WF",
     "sub_region": "XXY"
-#}
+}
 
 #Notas
 Estes testes podem ser realizados no navegador ou no postman e se nao tiver este, baixe neste link(https://www.postman.com/downloads/) ou no Insomnia e se nao tiver este, baixe neste link(https://insomnia.rest/download)
